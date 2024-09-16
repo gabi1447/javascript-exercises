@@ -1,8 +1,14 @@
 const repeatString = function(word, times) {
     if (times < 0) {
-        return 'ERROR';
+        return "ERROR";
     }
-    return word.repeat(times);
+
+    let result = "";
+    for (let i = 0; i < times; i++) {
+        result += word;
+    }
+
+    return result;
 };
 
 // Do not edit below this line
